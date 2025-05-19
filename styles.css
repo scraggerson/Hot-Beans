@@ -15,8 +15,6 @@ table {
     color: #ffffff7a;
     height: auto;
     text-align: center;
-    white-space: nowrap;
-    word-wrap: break-word;
   }
   
   tr {
@@ -37,7 +35,7 @@ table {
 }
 h1 {
     color: white;
-    font-size:xx-large;
+    font-size: 50px;
 }
 a:visited {
     color: white;
@@ -56,4 +54,16 @@ body {
 }
 p {
   color: white;
+}
+.wraptext {
+  width: inherit;
+  word-wrap: break-word;
+  word-break: inherit;
+}
+h2 {
+  font-size: x-large;
+  color: aliceblue;
+}
+ul {
+  color: aliceblue;
 }
