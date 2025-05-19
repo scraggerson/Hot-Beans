@@ -10,7 +10,7 @@ table {
   
   th,
   td {
-    border: 1px solid rgb(207, 207, 207);
+    border: 1px solid rgb(255, 255, 255);
     padding: 8px 10px;
     color: #ffffff7a;
     height: auto;
@@ -18,7 +18,7 @@ table {
   }
   
   tr {
-      background: #000000ad;
+      background: #0000008f;
       height: auto;
       width: 50vw;
   }
@@ -31,11 +31,15 @@ table {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 h1 {
     color: white;
-    font-size: 50px;
+    font-size: 40px;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 a:visited {
     color: white;
@@ -50,10 +54,18 @@ a {
   justify-content: center;
 }
 body {
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(0, 0, 0);
+  background-image: url(images/ascii-animation\ \(1\).gif);
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  background-size: 40%;
 }
 p {
   color: white;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 .wraptext {
   width: inherit;
@@ -62,8 +74,28 @@ p {
 }
 h2 {
   font-size: x-large;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
 }
 ul {
-  color: aliceblue;
+  color: rgb(255, 255, 255);
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+pre {
+  font-size: x-small;
+  color: rgb(255, 255, 255);
+}
+h4 {
+  color: white;
+  font-size: xx-large;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
