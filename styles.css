@@ -300,9 +300,8 @@ iframe {
   td {
     display: block;
     width: 100% !important;
-    box-sizing: border-box;
+    box-sizing:border-box;
   }
-
   tr {
     margin-bottom: 15px;
     border: 1px solid white;
@@ -337,7 +336,7 @@ iframe {
   p, ul, li {
     font-size: 0.95rem;
     text-align: left;
-    padding: 0 12px;
+    padding: 0 0px;
   }
 
   .flex-container {
