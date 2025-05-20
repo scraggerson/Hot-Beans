@@ -288,3 +288,75 @@ h6 {
     border-bottom: 1px solid white;
   }
 }
+@media (max-width: 430px) {
+  table.centered-container,
+  tbody,
+  tr,
+  th,
+  td {
+    display: block;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  tr {
+    margin-bottom: 15px;
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  th,
+  td {
+    padding: 12px;
+    text-align: center;
+    height: auto;
+    border: 1px solid white;
+    color: white;
+  }
+
+  .logo {
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 10px 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  p, ul, li {
+    font-size: 0.95rem;
+    text-align: left;
+    padding: 0 12px;
+  }
+
+  .flex-container {
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .clickable {
+    display: inline-block;
+    padding: 10px 16px;
+    font-size: 1rem;
+    background-color: #1cc769;
+    color: black;
+    border-radius: 6px;
+    margin: 10px auto;
+  }
+
+  tr:nth-child(2) th a {
+    display: block;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.05);
+    margin-bottom: 5px;
+  }
+}
