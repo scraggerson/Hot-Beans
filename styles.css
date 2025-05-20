@@ -1,32 +1,38 @@
 table {
     border-collapse: collapse;
     font-family: monospace;
-    font-size: 0.8rem;
     letter-spacing: 1px;
     table-layout: fixed;
     overflow-x: hidden;
-    height: fit-content;
-    width: fixed;
+    width: 200px;
+  }
+  tbody {
+    width: 1327px;
   }
   
-  th,
+  th{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 8px 10px;
+    color: #ffffff00;
+    height: 100px;
+  }
+  
   td {
     border: 1px solid rgb(255, 255, 255);
     padding: 8px 10px;
     color: #ffffff00;
-    height: auto;
-    text-align: center;
-    width: fixed;
+    height: 150px;
+    text-align:justify;
   }
   
   tr {
       background: #0000008f;
-      height: auto;
-      width: 50vw;
+      height: 100px;
+      width: auto;
   }
 
   .centered-container {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -35,13 +41,27 @@ table {
     padding: 0;
     overflow-y: scroll;
 }
-
-a:visited {
-    color: white;
+.clickable {
+  color:rgb(28, 199, 105) !important;
 }
 a {
+  font-size: 28.26px;
+  color: rgb(255, 255, 255);
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing:none;
+  font-weight: 800;
+  font-style: normal;
   text-decoration: none;
-  color: white;
+}
+
+a:hover {
+  color: #00814c;
+  font-size: 28.26px;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing:none;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
 }
 .flex-container {
   display: flex;
@@ -52,8 +72,9 @@ body {
   background-color: black;
   background-image: url(images/background.gif);
   background-repeat: no-repeat;
-  background-position: 50% 10%;
+  background-position: center top;
   background-size: 40%;
+  overflow: scroll;
 }
 p {
   color: white;
@@ -91,7 +112,7 @@ h2 {
   font-size: 28.26px;
   color: rgb(255, 255, 255);
   font-family: "JetBrains Mono", monospace;
-  font-optical-sizing: auto;
+  font-optical-sizing:none;
   font-weight: 800;
   font-style: normal;
 }
@@ -114,4 +135,18 @@ h5 {
 }
 h6 {
   font-size: 7.07px;
+}
+.form {
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  font-style: italic;
+}
+.logo {
+  color: white;
+  color: white;
+  font-size: 24.14px;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
 }

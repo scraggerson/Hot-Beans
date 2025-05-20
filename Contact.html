@@ -3,7 +3,7 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,21 +15,19 @@
         <tbody>
             <tr><!--row 1-->
                 <th colspan="1">
-                    <div><h4>hot.beans()</h4></div>
+                    <div class="logo">hot.beans()</div>
                 </th>
                 <th colspan="5">
                     <h1>contact us</h1>
                 </th>
             </tr>
             <tr> <!--row 2-->
-                <th width="200px"><a href="index.html"><h3>home</h3></a></th>
-                <th width="200px"><a href="apply.html"><h3>apply</h3></a></th>
-                <th width="200px"><a href="Contact.html"><h3>contact</h3></a></th>
-                <th width="200px"><a href="Training.html"><h3>training</h3></a></th>
-                <th width="200px"><a href="theteam.html"><h3>the team</h3></a></th>
-                <th width="200px"><a href="Other.html"><h3>other</h3></a></th>
-
-                </th>
+                <th width="200px"><a href="index.html">home</a></th>
+                <th width="200px"><a href="apply.html">apply</a></th>
+                <th width="200px"><a href="Contact.html">contact us</a></th>
+                <th width="200px"><a href="Training.html">training</a></th>
+                <th width="200px"><a href="theteam.html">the team</a></th>
+                <th width="200px"><a href="Other.html">other></a></th>
             </tr>
             <tr><!--row 3-->
                 <td colspan="1">
@@ -39,7 +37,7 @@
                     <h2>Let’s Talk Code ☕💻</h2>
                     <p>Whether you're ready to start a project, have a quick question, or just want to say hello—we’d love to hear from you.</p>
                     <h2>📬 Get in Touch</h2>
-                    <ul> <img src="images/ezgif-81d33473e3e005.gif" alt="">
+                    <ul>
                         <li>Email: hello@hotbeans.dev</li>
                         <li>Phone: PLACEHOLDER</li>
                         <li>Location: PLACEHOLDER</li>
@@ -48,17 +46,21 @@
                     <p>i dont have an API key rn :(</p>
                     <h3>Prefer a Form?</h3>
                     <p>Fill out the form below and we'll get back to you as soon as possible.<p>
+                    <div class="form">
                     <form>
-                        <label for="fname" style="color: aliceblue;">First name:</label><br>
+                        <label for="fname">First name:</label><br>
                         <input type="text" id="fname" name="fname"><br>
-                        <label for="lname" style="color: aliceblue;">Last name:</label><br>
+                        <label for="lname">Last name:</label><br>
                         <input type="text" id="lname" name="lname"><br>
-                        <label for="email" style="color: aliceblue;">Email Adress:</label><br>
+                        <label for="email">Email Adress:</label><br>
                         <input type="text" id="email" name="email"><br>
-                        <label for="message" style="color: aliceblue;">Your Message:</label><br>
+                        <label for="message">Your Message:</label><br>
                         <input type="text" id="message" name="message"><br>
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit"><br>
+                        <label for="attachment"">Got a CV or Resume for us?</label><br>
+                        <input type="file" id="attachment" name="attachment">
                     </form>
+                    </div>
                 </td>
             </tr>
         </tbody>
