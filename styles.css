@@ -73,7 +73,7 @@ body {
   background-image: url(images/background.gif);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 40%;
+  background-size: 50%;
   overflow: scroll;
 }
 p {
@@ -158,9 +158,6 @@ h6 {
   flex-direction: column;
 }
 
-
-
-
 @media (max-width: 768px) {
   table.centered-container {
     display: block;
@@ -200,22 +197,14 @@ h6 {
   h2 {
     font-size: 1.2rem;
   }
-
-  p, li {
-    font-size: 1rem;
-  }
 }
 @media (max-width: 768px) {
   body {
     background-size: cover;
-    background-position: center;
+    background-position: left;
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
-iframe {
-  width: 100;
-  height: 100;
-}
 }
 @media (max-width: 1024px) {
   table.centered-container,
@@ -260,12 +249,6 @@ iframe {
     text-align: center;
   }
 
-  p, ul, li {
-    font-size: 1rem;
-    text-align: left;
-    padding: 0 10px;
-  }
-
   .flex-container {
     align-items: center;
     margin-top: 20px;
@@ -278,14 +261,6 @@ iframe {
     color: black;
     border-radius: 6px;
     margin: 10px auto;
-  }
-
-  tr:nth-child(2) th a {
-    display: block;
-    padding: 12px 0;
-    font-size: 1.2rem;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
   }
 }
 @media (max-width: 430px) {
@@ -329,12 +304,6 @@ iframe {
     text-align: center;
   }
 
-  p, ul, li {
-    font-size: 0.95rem;
-    text-align: left;
-    padding: 0 0px;
-  }
-
   .flex-container {
     align-items: center;
     margin-top: 15px;
@@ -347,14 +316,5 @@ iframe {
     color: black;
     border-radius: 6px;
     margin: 10px auto;
-  }
-
-  tr:nth-child(2) th a {
-    display: block;
-    padding: 12px;
-    font-size: 1rem;
-    border: 1px solid rgb(28, 199, 105);
-    background: rgba(255, 255, 255, 0.05);
-    margin-bottom: 5px;
   }
 }
