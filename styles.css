@@ -1,3 +1,4 @@
+/*table styling*/
 table {
     border-collapse: collapse;
     font-family: monospace;
@@ -41,9 +42,11 @@ table {
     padding: 0;
     overflow-y: scroll;
 }
+/*formatting for links etc*/
 .clickable {
   color:rgb(28, 199, 105) !important;
 }
+/*formatting for buttons and nav bar*/
 a {
   font-size: 28.26px;
   color: rgb(255, 255, 255);
@@ -53,9 +56,9 @@ a {
   font-style: normal;
   text-decoration: none;
 }
-
+/*buttons in navbar turn green when hovered*/
 a:hover {
-  color: #00814c;
+  color:rgb(28, 199, 105);
   font-size: 28.26px;
   font-family: "JetBrains Mono", monospace;
   font-optical-sizing:none;
@@ -68,6 +71,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
 }
+/* background image */
 body {
   background-color: rgb(0, 0, 0);
   background-image: url(images/background.gif);
@@ -88,7 +92,7 @@ p {
   word-wrap: break-word;
   word-break: inherit;
 }
-
+/* heading and list formatting */
 ul {
   color: rgb(255, 255, 255);
   font-family: "JetBrains Mono", monospace;
@@ -141,6 +145,7 @@ h6 {
   font-weight: 800;
   font-style: italic;
 }
+/* logo text and sidebar */
 .logo {
   color: white;
   color: white;
@@ -157,7 +162,7 @@ h6 {
   display: flex;
   flex-direction: column;
 }
-
+/* mobile layout for screens thinner than 768px */
 @media (max-width: 768px) {
   table.centered-container {
     display: block;
@@ -206,6 +211,7 @@ h6 {
     background-repeat: no-repeat;
   }
 }
+/* mobile layout for screens under 1024px in width */
 @media (max-width: 1024px) {
   table.centered-container,
   tbody,
@@ -263,6 +269,7 @@ h6 {
     margin: 10px auto;
   }
 }
+/* mobile layout for screens below 430px in width */
 @media (max-width: 430px) {
   table.centered-container,
   tbody,
