@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Other</title>
+    <title>Store</title>
     <link rel="icon" type="image/x-icon" href="images/bean.png">
 </head>
 <body>
@@ -29,65 +29,73 @@
                 <th width="200px"><a href="contact.html">contact us</a></th>
                 <th width="200px"><a href="training.html">training</a></th>
                 <th width="200px"><a href="theteam.html">the team</a></th>
-                <th width="200px"><a href="other.html">other</a></th>
+                <th width="200px"><a href="other.html">store</a></th>
             </tr>
             <tr><!--row 3-->
                 <td colspan="1">
+                    <div class="cartTest">
+                         <div class="cartname">Cart</div>
+                        <ul id="cart"></ul>
+                        <a href="">
+                            <div class="clickable">Check Out</div>
+                        </a>
+                        
+                    </div>
                 </td>
                 <td style="table-layout: fixed; word-wrap: break-word; width: inherit; text-align: left;" colspan="5"><!--MAIN CONTENT-->
                     <div class="store-container">
                         <div1>
+                            <placeholder>PLACEHOLDER!!!</placeholder>
                             <h2>Turkish Homelander</h2>
                             <h3 style="text-align: start;">£6.70</h3>
                             <img src="images/the-homelander-skin-vatansever-will-be-available-to-all-v0-fttedrmtx8jb1.jpeg" alt="" class="turklander">
-                            <a href="">
-                                <div class="clickable">Add to Cart</div>
-                            </a>
+                            <br>
+                            <button onclick="addToCart('Turkish Homelander', 6.70)">Add to Cart</button>
                         </div1>
                         <div1>
-                            <h2>Turkish Homelander</h2>
+                            <placeholder>PLACEHOLDER!!!</placeholder>
+                            <h2>JD Vance</h2>
                             <h3 style="text-align: start;">£6.70</h3>
-                            <img src="images/the-homelander-skin-vatansever-will-be-available-to-all-v0-fttedrmtx8jb1.jpeg" alt="" class="turklander">
-                            <a href="">
-                                <div class="clickable">Add to Cart</div>
-                            </a>
+                            <img src="images/jd-vance-had-a-great-time-at-the-death-grips-concert-v0-qnuy0nbhrrvd1.jpeg" alt="" class="turklander">
+                            <br>
+                            <button onclick="addToCart('JD Vance', 6.70)">Add to Cart</button>
                         </div1>
                         <div1>
-                            <h2>Turkish Homelander</h2>
+                            <placeholder>PLACEHOLDER!!!!</placeholder>
+                            <h2>Robert Downey Jr.</h2>
                             <h3 style="text-align: start;">£6.70</h3>
-                            <img src="images/the-homelander-skin-vatansever-will-be-available-to-all-v0-fttedrmtx8jb1.jpeg" alt="" class="turklander">
-                            <a href="">
-                                <div class="clickable">Add to Cart</div>
-                            </a>
+                            <img src="images/5y04acfxungc1.jpeg" alt="" class="turklander">
+                            <br>
+                            <button onclick="addToCart('Robert Downey Jr.', 6.70)">Add to Cart</button>
                         </div1>
-                        <div1>
-                            <h2>Turkish Homelander</h2>
-                            <h3 style="text-align: start;">£6.70</h3>
-                            <img src="images/the-homelander-skin-vatansever-will-be-available-to-all-v0-fttedrmtx8jb1.jpeg" alt="" class="turklander">
-                            <a href="">
-                                <div class="clickable">Add to Cart</div>
-                            </a>
-                        </div1>
-                        <div1>
-                            <h2>Turkish Homelander</h2>
-                            <h3 style="text-align: start;">£6.70</h3>
-                            <img src="images/the-homelander-skin-vatansever-will-be-available-to-all-v0-fttedrmtx8jb1.jpeg" alt="" class="turklander">
-                            <a href="">
-                                <div class="clickable">Add to Cart</div>
-                            </a>
-                        </div1>
-                        <div1>
-                            <h2>Turkish Homelander</h2>
-                            <h3 style="text-align: start;">£6.70</h3>
-                            <img src="images/the-homelander-skin-vatansever-will-be-available-to-all-v0-fttedrmtx8jb1.jpeg" alt="" class="turklander">
-                            <a href="">
-                                <div class="clickable">Add to Cart</div>
-                            </a>
-                        </div1>
+                        
                 </td>
             </tr>
         </tbody>
     </table>
-    
+    <script>
+        const cart = {};
+        function addToCart(productName, productPrice) {
+            if (cart[productName]) {
+                cart[productName].quantity += 1;
+                cart[productName].totalPrice += productPrice;
+            } else {
+                cart[productName] = {
+                    quantity: 1,
+                    totalPrice: productPrice
+                };
+            }
+            updateCartDisplay();
+        }
+        function updateCartDisplay() {
+            const cartList = document.getElementById('cart');
+            cartList.innerHTML = '';
+            for (let product in cart) {
+                const listItem = document.createElement('li');
+                listItem.innerText = `${product} Quantity:${cart[product].quantity} Total Price: £${cart[product].totalPrice.toFixed(2)}`;
+                cartList.appendChild(listItem);
+            }
+        }
+    </script>
 </body>
 </html>

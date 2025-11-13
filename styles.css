@@ -24,6 +24,7 @@ table {
     color: #ffffff00;
     height: 150px;
     text-align:justify;
+    vertical-align: top;
   }
   
   tr {
@@ -31,7 +32,12 @@ table {
       height: 100px;
       width: auto;
   }
-
+  .cartname {
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 800;
+    font-family: 'JetBrains Mono';
+}
   .centered-container {
     display: grid;
     justify-content: center;
@@ -58,6 +64,18 @@ table {
     padding: 10px;
     text-align: center;
     width: fit-content;
+}
+
+div1 button {
+    background-color: #00000085;
+    color: rgb(28, 199, 105);
+    border: none;
+    cursor: pointer;
+}
+placeholder {
+    font-size: x-large;
+    color: red;
+    font-weight: 900;
 }
 
   img.turklander {
