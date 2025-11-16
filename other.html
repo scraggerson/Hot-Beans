@@ -45,28 +45,28 @@
                 <td style="table-layout: fixed; word-wrap: break-word; width: inherit; text-align: left;" colspan="5"><!--MAIN CONTENT-->
                     <div class="store-container">
                         <div1>
-                            <placeholder>PLACEHOLDER!!!</placeholder>
-                            <h2>Turkish Homelander</h2>
-                            <h3 style="text-align: start;">£6.70</h3>
-                            <img src="images/the-homelander-skin-vatansever-will-be-available-to-all-v0-fttedrmtx8jb1.jpeg" alt="" class="turklander">
+                            <h2>Placeholder 1</h2>
+                            <h3 style="text-align: start;">£1.11</h3>
+                            <img src="images/placeholder image.png" alt="" class="turklander">
                             <br>
-                            <button onclick="addToCart('Turkish Homelander', 6.70)">Add to Cart</button>
+                            <button onclick="addToCart('Placeholder 1', 1.11)">Add to Cart</button>
+                            <button onclick="removeFromCart('Placeholder 1', 1.11)">Remove from cart</button>
                         </div1>
                         <div1>
-                            <placeholder>PLACEHOLDER!!!</placeholder>
-                            <h2>JD Vance</h2>
-                            <h3 style="text-align: start;">£6.70</h3>
-                            <img src="images/jd-vance-had-a-great-time-at-the-death-grips-concert-v0-qnuy0nbhrrvd1.jpeg" alt="" class="turklander">
+                            <h2>Placeholder 2</h2>
+                            <h3 style="text-align: start;">£2.22</h3>
+                            <img src="images/placeholder image.png" alt="" class="turklander">
                             <br>
-                            <button onclick="addToCart('JD Vance', 6.70)">Add to Cart</button>
+                            <button onclick="addToCart('Placeholder 2', 2.22)">Add to Cart</button>
+                            <button onclick="removeFromCart('Placeholder 2', 2.22)">Remove from cart</button>
                         </div1>
                         <div1>
-                            <placeholder>PLACEHOLDER!!!!</placeholder>
-                            <h2>Robert Downey Jr.</h2>
-                            <h3 style="text-align: start;">£6.70</h3>
-                            <img src="images/5y04acfxungc1.jpeg" alt="" class="turklander">
+                            <h2>Placeholder 3</h2>
+                            <h3 style="text-align: start;">£3.33</h3>
+                            <img src="images/placeholder image.png" alt="" class="turklander">
                             <br>
-                            <button onclick="addToCart('Robert Downey Jr.', 6.70)">Add to Cart</button>
+                            <button onclick="addToCart('Placeholder 3', 3.33)">Add to Cart</button>
+                            <button onclick="removeFromCart('Placeholder 3', 3.33)">Remove from cart</button>
                         </div1>
                         
                 </td>
@@ -75,6 +75,7 @@
     </table>
     <script>
         const cart = {};
+// ADD ITEM TO CART
         function addToCart(productName, productPrice) {
             if (cart[productName]) {
                 cart[productName].quantity += 1;
@@ -87,6 +88,20 @@
             }
             updateCartDisplay();
         }
+
+// REMOVE ITEM FROM CART
+        function removeFromCart(productName, productPrice) {
+            if (cart[productName].quantity <= 1) {
+                delete cart[productName]
+                console.log(cart)
+            } else {
+                cart[productName].quantity -= 1;
+                cart[productName].totalPrice -= productPrice;
+            }
+            updateCartDisplay();
+        }
+            
+// UPDATE CART
         function updateCartDisplay() {
             const cartList = document.getElementById('cart');
             cartList.innerHTML = '';

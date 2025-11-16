@@ -68,10 +68,19 @@ table {
 
 div1 button {
     background-color: #00000085;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+button:hover {
+    background-color: rgba(0, 0, 0, 0.6);
     color: rgb(28, 199, 105);
     border: none;
     cursor: pointer;
+    font-weight: 600;
 }
+
 placeholder {
     font-size: x-large;
     color: red;
