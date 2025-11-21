@@ -72,7 +72,7 @@
                 </td>
             </tr>
         </tbody>
-    </table>
+    </table> 
     <script>
         const cart = {};
 // ADD ITEM TO CART
@@ -86,10 +86,11 @@
                     totalPrice: productPrice
                 };
             }
-            updateCartDisplay();
+            updateCartDisplay()
+            localStorage.setItem(cart)
         }
 
-// REMOVE ITEM FROM CART
+// REMOVE ITEM FROM CART 
         function removeFromCart(productName, productPrice) {
             if (cart[productName].quantity <= 1) {
                 delete cart[productName]
@@ -98,7 +99,7 @@
                 cart[productName].quantity -= 1;
                 cart[productName].totalPrice -= productPrice;
             }
-            updateCartDisplay();
+            updateCartDisplay()
         }
             
 // UPDATE CART
