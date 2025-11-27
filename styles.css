@@ -23,7 +23,7 @@ table {
     padding: 8px 10px;
     color: #ffffff00;
     height: 150px;
-    text-align:justify;
+    text-align:left;
     vertical-align: top;
   }
   
@@ -48,6 +48,12 @@ table {
     padding: 0;
     overflow-y: scroll;
 }
+  .date {
+    font-style: italic; 
+    font-size: small; 
+    color: rgb(28, 199, 105);
+  }
+
 
   .store-container {
     display: inline-grid;
@@ -89,6 +95,11 @@ placeholder {
 
   img.turklander {
     width: 240px;
+}
+.tilebg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 /*formatting for links etc*/
 .clickable {
